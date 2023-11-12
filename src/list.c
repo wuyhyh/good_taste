@@ -17,7 +17,7 @@ void remove_cs101(list *l, list_item *target)
 		l->head = cur->next;
 }
 
-struct inline list_item **find_indirect(list *l, list_item *target)
+static inline list_item **find_indirect(list *l, list_item *target)
 {
 	list_item **p = &l->head;
 	while (*p != target)
