@@ -8,12 +8,12 @@
 #define mu_assert(test, message) \
 	do {                         \
 		if (!(test))             \
-			return message       \
+			return message;      \
 	} while (0)
 
 #define mu_run_test(test)       \
 	do {                        \
-		char *meaasge = test(); \
+		char *message = test(); \
 		tests_run++;            \
 		if (message)            \
 			return message;     \

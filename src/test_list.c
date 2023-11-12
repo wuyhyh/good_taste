@@ -25,8 +25,8 @@ static list *reset_list()
 static char *test_list()
 {
 	// test inserting at the beginning
-	reset_list() l;
-	mu_assert(size(&l) == 0. "Initial list size is expected to be zero.");
+	reset_list();
+	mu_assert(size(&l) == 0, "Initial list size is expected to be zero.");
 	for (size_t i = 0; i < N; i++)
 		insert_before(&l, l.head, &items[i]);
 	mu_assert(size(&l) == N, "Final list size should be N");
@@ -40,7 +40,7 @@ static char *test_list()
 
 	// test inserting at the end
 	reset_list();
-	mu_assert(size(&l) == 0. "Initial list size is expected to be zero.");
+	mu_assert(size(&l) == 0, "Initial list size is expected to be zero.");
 	for (size_t i = 0; i < N; i++)
 		insert_before(&l, l.head, &items[i]);
 	mu_assert(size(&l) == N, "Final list size should be N");
@@ -66,7 +66,7 @@ static char *test_list()
 
 	// test the list and insert elements in order (i.e. at the end)
 	reset_list();
-	mu_assert(size(&l) == 0. "Initial list size is expected to be zero.");
+	mu_assert(size(&l) == 0, "Initial list size is expected to be zero.");
 	for (size_t i = 0; i < N; i++)
 		insert_before(&l, l.head, &items[i]);
 	mu_assert(size(&l) == N, "Final list size should be N");
