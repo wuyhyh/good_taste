@@ -83,7 +83,7 @@ static char *test_list()
 	return NULL;
 }
 
-int test_run = 0;
+int tests_run = 0;
 
 static char *test_suite()
 {
