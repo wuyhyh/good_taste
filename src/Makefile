@@ -7,7 +7,7 @@ test: test_list
 	./test_list
 
 list.o: list.c list.h
-	$(CC) $(CFLAGS) -c $^ -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 test_list: test_list.c
 	$(CC) $(CFLAGS) $^ -o $@
