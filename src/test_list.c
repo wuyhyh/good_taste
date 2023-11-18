@@ -1,7 +1,3 @@
-//
-// Created by wyh on 2023/11/12.
-//
-
 #include "minunit.h"
 #include <stdio.h>
 #include <stdlib.h>
